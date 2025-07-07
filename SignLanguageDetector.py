@@ -22,15 +22,10 @@ class SignLanguageDetector:
         
         # Modèle (sera chargé ou créé)
         self.model = None
-        self.load_or_create_model()
+        self.create_model_method()
 
-    def load_or_create_model(self):
-        """Charge un modèle existant ou en crée un nouveau"""
-        model_path = 'sign_language_model.h5'
-        if os.path.exists(model_path):
-            print("Chargement du modèle existant...")
-            self.model = keras.models.load_model(model_path)
-        else:
+    def create_model_method(self):
+
             print("Création d'un nouveau modèle...")
             self.model = self.create_model()
             # Ici vous pourriez ajouter l'entraînement avec un dataset
