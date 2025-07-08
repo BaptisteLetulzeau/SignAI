@@ -1,0 +1,8 @@
+C'est quoi un neuronne ? Chapitre 1
+
+Couche d'entrée => sous-couches (choix arbitraire) => couche de sortie
+Chaque liaison a un poids, qui peut etre négatif ou positif
+Matrice(somme des poids) x Matrice(valeur neuronne) + Matrice(biais)
+Signoid de chaque élément de la matrice
+Chaque neuronne peut etre activé ou pas
+
