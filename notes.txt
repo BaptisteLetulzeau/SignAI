@@ -6,3 +6,18 @@ Matrice(somme des poids) x Matrice(valeur neuronne) + Matrice(biais)
 Signoid de chaque élément de la matrice
 Chaque neuronne peut etre activé ou pas
 
+Descente de gradients - Chepitre 2
+
+Fonction de coût (calculée en fonction des poids et biais
+Gradient max = Valeur de la pente où elle est la plus raide
+Gradient min = Inverse du max
+Descente de gradient = Converger vers un minimum local
+Structure de données ordonnée => plus facile a traiter
+
+Rétropopagation - Chapitre 3
+
+Sert a ajuster les poids et les biais pour réduire les coûts le plus rapidement possible
+Calculer le pourcentage de réduction ou augmentation
+
+Calculs - Chapitre 4
+
