@@ -29,4 +29,14 @@ Transformers => Assimilent le texte en paralèle au lieu de le lire linéairemen
 Chaque mot d'un prompt est associé à une suite de nombre (encodé)
 Attention => Affiner chaque nombre auquel est associé un mot
 
------- 
+------ Mais c'est quoi un GPT ? Chapitre 5
+
+Chaque mot ou petit extrait de texte est un token
+Transformer => type particulier de réseau de neuronne qui sert à entrainer le model
+Embedding => représentation de vecteurs de données dans un espace dimentionnel
+Gpt2 et Gpt3 la différence est un plus large model de données d'entrainement
+
+------ MNIST
+
+Neuronne de convolution => 9 entrées et 1 biais donc 10 poids
+
