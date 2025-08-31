@@ -1,4 +1,4 @@
-# T-YEP-600_msc2027 END 3e YEAR PROJECT EPITECH
+# T-YEP-600_msc2027 END 3rd YEAR PROJECT EPITECH
 
 # MNIST Digit Classification with TensorFlow
 
