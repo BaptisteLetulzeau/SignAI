@@ -22,8 +22,8 @@ class MNIST:
             
     def preprocess_data(self, x_train, y_train, x_test, y_test):            
         # Pixels are between 0 and 255 but neuronal network works with 0 and 1
-        x_train = x_train.astype('float32') / 255.0
-        x_test = x_test.astype('float32') / 255.0
+        x_train = x_train.astype('float32') / 255
+        x_test = x_test.astype('float32') / 255
         
         # We resize model because mnist images are 28 x 28px
         # -1 to keep the number of samples
@@ -85,7 +85,9 @@ class MNIST:
     def evaluate_model(self, x_test, y_test):        
         test_loss, test_accuracy = self.model.evaluate(x_test, y_test, verbose=0)
         
+        print(x_test)
         y_pred = self.model.predict(x_test)
+        print(y_pred)
         y_pred_classes = np.argmax(y_pred, axis=1)
         y_true_classes = np.argmax(y_test, axis=1) 
         
