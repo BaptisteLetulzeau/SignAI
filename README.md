@@ -1,3 +1,5 @@
+# T-YEP-600_msc2027 END 3e YEAR PROJECT EPITECH
+
 # MNIST Digit Classification with TensorFlow
 
 This project implements a neural network for handwritten digit recognition using the MNIST dataset.
