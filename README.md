@@ -13,7 +13,7 @@ The code creates a `MNIST` class that encapsulates all necessary steps to:
 ## Requirements
 
 ```bash
-cd ./requirement.txt
+cd /install/install.txt
 ```
 
 ## Model Architecture
