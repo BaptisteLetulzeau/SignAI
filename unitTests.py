@@ -9,24 +9,6 @@ from unittest.mock import patch, MagicMock
 
 from MNIST import MNIST
 
-def run_mnist_training():
-    mnist = MNIST()
-    
-    # Charger et préprocesser
-    (x_train, y_train), (x_test, y_test) = mnist.load_dataset()
-    (x_train, y_train), (x_test, y_test) = mnist.preprocess_data(x_train, y_train, x_test, y_test)
-    
-    # Construire et entraîner
-    mnist.build_model()
-    mnist.train_model(x_train, y_train, x_test, y_test, epochs=15)
-    
-    # Évaluer
-    test_accuracy, y_pred_classes, y_true_classes = mnist.evaluate_model(x_test, y_test)
-    print(f"Test accuracy: {test_accuracy}")
-
-if __name__ == "__main__":
-    run_mnist_training()
-
 ################################################ Unit TESTS ################################################
 class TestMNIST(unittest.TestCase):
     def setUp(self):
