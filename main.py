@@ -41,7 +41,7 @@ class MNIST:
         self.model = keras.Sequential([
             # Entry
             layers.Dense(128, activation='relu', input_shape=(784,)),
-            layers.Dropout(0.2),  # random deactivation
+            layers.Dropout(0.2),  # random desactivation
             
             # Hide
             layers.Dense(64, activation='relu'),
@@ -85,9 +85,9 @@ class MNIST:
     def evaluate_model(self, x_test, y_test):        
         test_loss, test_accuracy = self.model.evaluate(x_test, y_test, verbose=0)
         
-        print(x_test)
+        # print("x_test: ", x_test)
         y_pred = self.model.predict(x_test)
-        print(y_pred)
+        # print("y_test: ", y_pred)
         y_pred_classes = np.argmax(y_pred, axis=1)
         y_true_classes = np.argmax(y_test, axis=1) 
         
